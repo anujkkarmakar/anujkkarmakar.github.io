@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuj Kumar Karmakar - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(45deg, #2563eb, #4f46e5);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">AK</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600 transition-colors">Projects</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 transition-colors">Skills</a>
+                    <a href="#achievements" class="text-gray-700 hover:text-blue-600 transition-colors">Achievements</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700 hover:text-blue-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden">
+                <div class="py-4 space-y-4">
+                    <a href="#home" class="block text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#about" class="block text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#projects" class="block text-gray-700 hover:text-blue-600">Projects</a>
+                    <a href="#skills" class="block text-gray-700 hover:text-blue-600">Skills</a>
+                    <a href="#achievements" class="block text-gray-700 hover:text-blue-600">Achievements</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen pt-24 pb-12 bg-gradient-to-r from-blue-600 to-indigo-600 flex items-center">
+        <div class="container mx-auto px-6 text-center">
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 inline-block shadow-xl">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Anuj Kumar Karmakar</h1>
+                <p class="text-xl text-blue-100 mb-8">Information Technology Student & Android Developer</p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+                    <a href="https://linkedin.com/in/anujkkarmakar" target="_blank" 
+                       class="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+                        <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                    </a>
+                    <a href="https://github.com/anujkkarmakar" target="_blank" 
+                       class="bg-white text-gray-800 px-6 py-2 rounded-full hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                    <a href="assets/resume.pdf" download 
+                       class="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-2 rounded-full hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+                        <i class="fas fa-download mr-2"></i>Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+            <div class="max-w-3xl mx-auto text-gray-600">
+                <p class="mb-6 text-lg leading-relaxed">
+                    I am a final-year Information Technology student at the University Institute of Technology, 
+                    The University of Burdwan, maintaining a CGPA of 8.48. My expertise lies in Android Development 
+                    (Java, Kotlin) and Web Development.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                        <h3 class="font-bold mb-4 text-blue-800">Education</h3>
+                        <p class="text-gray-700">Bachelor of Engineering in Information Technology<br>2021 - Ongoing</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                        <h3 class="font-bold mb-4 text-blue-800">Contact</h3>
+                        <p class="text-gray-700">Email: anujkarmakar999@gmail.com<br>Phone: (+91) 98311-06711</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- TransitAI -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <div class="p-8">
+                        <h3 class="font-bold text-xl mb-4 text-blue-800">TransitAI Passenger</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Android application for digital ticket booking and environmental impact tracking for 
+                            Delhi Transport Corporation.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-sm px-4 py-1 rounded-full">Java</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm px-4 py-1 rounded-full">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IntelliSched -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <div class="p-8">
+                        <h3 class="font-bold text-xl mb-4 text-blue-800">IntelliSched</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Intelligent class schedule generator using Genetic Algorithm, considering hard and 
+                            soft constraints.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-sm px-4 py-1 rounded-full">Python</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm px-4 py-1 rounded-full">Tkinter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AirQuality -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <div class="p-8">
+                        <h3 class="font-bold text-xl mb-4 text-blue-800">AirQuality</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Real-time air quality monitoring Android application using location services and 
+                            AQI APIs.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-sm px-4 py-1 rounded-full">Android</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm px-4 py-1 rounded-full">APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                <div class="p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <h3 class="font-bold mb-6 text-blue-800">Core Technologies</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>Android Development (Java, Kotlin)</li>
+                        <li>Web Development (HTML, CSS, JavaScript)</li>
+                    </ul>
+                </div>
+                <div class="p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <h3 class="font-bold mb-6 text-blue-800">Cloud & Backend</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>AWS (EC2, Lambda, RDS)</li>
+                        <li>Firebase</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <h3 class="font-bold mb-6 text-blue-800">Frameworks</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>TailWind CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Jetpack Compose</li>
+                    </ul>
+                </div>
+                <div class="p-8 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+                    <h3 class="font-bold mb-6 text-blue-800">Languages</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Kotlin</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Achievements</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <!-- Smart India Hackathon 2024 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-green-600 hover:shadow-xl transition-all duration-300">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-xl text-green-800">Smart India Hackathon 2024 - Grand Finalist</h3>
+                            <p class="text-gray-600 mt-2 leading-relaxed">Developed TransitAI solution for Delhi Transport Corporation</p>
+                            <p class="text-sm text-gray-500 mt-2">Created solution for Crew Scheduling and Route Management</p>
+                        </div>
+                        <span class="text-sm text-green-600 font-semibold">December 2024</span>
+                    </div>
+                </div>
+
+                <!-- NPTEL Behavioral Finance -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-purple-600 hover:shadow-xl transition-all duration-300">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-xl text-purple-800">NPTEL Course Excellence</h3>
+                            <p class="text-gray-600 mt-2 leading-relaxed">Top 5% rank in Behavioral and Personal Finance</p>
+                            <p class="text-sm text-gray-500 mt-2">Among national participants</p>
+                        </div>
+                        <span class="text-sm text-purple-600 font-semibold">March 2024</span>
+                    </div>
+                </div>
+
+                <!-- SIH 2023 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-yellow-600 hover:shadow-xl transition-all duration-300">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-xl text-yellow-800">Smart India Hackathon 2023</h3>
+                            <p class="text-gray-600 mt-2 leading-relaxed">Qualified internal selection</p>
+                        </div>
+                        <span class="text-sm text-yellow-600 font-semibold">September 2023</span>
+                    </div>
+                </div>
+
+                <!-- Smart Bengal Hackathon -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-red-600 hover:shadow-xl transition-all duration-300">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-xl text-red-800">Smart Bengal Hackathon</h3>
+                            <p class="text-gray-600 mt-2 leading-relaxed">Led team to secure 10th position</p>
+                            <p class="text-sm text-gray-500 mt-2">Competed among 800+ teams</p>
+                        </div>
+                        <span class="text-sm text-red-600 font-semibold">April 2023</span>
+                    </div>
+                </div>
+
+                <!-- NPTEL Java -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-indigo-600 hover:shadow-xl transition-all duration-300">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-xl text-indigo-800">NPTEL Programming Excellence</h3>
+                            <p class="text-gray-600 mt-2 leading-relaxed">Top 2% rank in Programming in Java certification</p>
+                            <p class="text-sm text-gray-500 mt-2">Among 40,000+ learners</p>
+                        </div>
+                        <span class="text-sm text-indigo-600 font-semibold">November 2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">Anuj Kumar Karmakar</h3>
+                    <p class="text-blue-100">Android Developer</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-blue-200"></i>
+                        <a href="mailto:anujkarmakar999@gmail.com" class="text-blue-100 hover:text-white transition-colors">
+                            anujkarmakar999@gmail.com
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-blue-200"></i>
+                        <span class="text-blue-100">(+91) 98311-06711</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/anujkkarmakar" target="_blank" 
+                           class="text-blue-200 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://github.com/anujkkarmakar" target="_blank" 
+                           class="text-blue-200 hover:text-white transition-colors">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-blue-400 text-center text-blue-200">
+                <p>&copy; 2024 Anuj Kumar Karmakar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation Script -->
+    <script>
+        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
+            const mobileMenu = document.querySelector('div.md\\:hidden');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
